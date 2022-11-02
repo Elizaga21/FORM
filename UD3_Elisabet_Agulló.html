@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta Servicio Web</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de Alta Servicio Web</h1>
+      </header>
+
+      <form action= “php-example.php” method “post” enctype="application/x-www-form-urlencoded"> 
+
+        <fieldset>
+
+            <legend><b>Datos personales </b></legend> <br>
+
+        Nombre: <br>
+        <input type=“text” name=“nombre” value="" placeholder="Nombre" /> 
+        <br/> 
+        Apellidos: <br>
+        <input type="text" name="apellidos" value="" placeholder="Apellidos"/>
+        </br>
+        Sexo: <br>
+        <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre <br/>
+        <input type="radio" name="sexo" value="mujer" /> Mujer <br>
+
+        <label for="fecha_dia">Fecha de nacimiento:</label> <br/>
+  <input type="text" size="3" maxlength="2" id="fecha_dia" name="fecha_dia" />
+  de
+  <select id="fecha_mes" name="fecha_mes">
+    <option value="1">Enero</option>
+    <option value="2">Febrero</option>
+    <option value="3">Marzo</option>
+    <option value="4">Abril</option>
+    <option value="5">Mayo</option>
+    <option value="6">Junio</option>
+    <option value="7">Julio</option>
+    <option value="8">Agosto</option>
+    <option value="9">Septiembre</option>
+    <option value="10">Octubre</option>
+    <option value="11">Noviembre</option>
+    <option value="12">Diciembre</option>
+  </select>
+  de
+  <input type="text" size="5" maxlength="4" id="fecha_año" name="fecha_año" />
+  <br/>
+   Dirección: <br>
+   <input type="text" name="dirección" value="" placeholder="Dirección"/> </br>
+   Código Postal: <br>
+   <input type="text" name="código" value="" placeholder="código postal" /> </br>
+
+   <label for="provincia">Provincia</label> <br/>
+  <select id="provincia" name="provincia">
+    <option value="" selected="selected">- selecciona -</option>
+    <option value="01">Álava/Araba</option>
+    <option value="02">Albacete</option>
+    <option value="03">Alicante/Alacant</option>
+    <option value="04">Almería</option>
+    <option value="33">Asturias</option>
+    <option value="05">Ávila</option>
+    <option value="06">Badajoz</option>
+    <option value="07">Illes Balears</option>
+    <option value="08">Barcelona</option>
+    <option value="09">Burgos</option>
+    <option value="10">Cáceres</option>
+    <option value="11">Cádiz</option>
+    <option value="39">Cantabria</option>
+    <option value="12">Castellón/Castelló</option>
+    <option value="51">Ceuta</option>
+    <option value="13">Ciudad Real</option>
+    <option value="14">Córdoba</option>
+    <option value="15">A Coruña</option>
+    <option value="16">Cuenca</option>
+    <option value="17">Girona</option>
+    <option value="18">Granada</option>
+    <option value="19">Guadalajara</option>
+    <option value="20">Guipúzcoa/Gipuzkoa</option>
+    <option value="21">Huelva</option>
+    <option value="22">Huesca</option>
+    <option value="23">Jaén</option>
+    <option value="24">León</option>
+    <option value="27">Lugo</option>
+    <option value="25">Lleida</option>
+    <option value="28">Madrid</option>
+    <option value="29">Málaga</option>
+    <option value="52">Melilla</option>
+    <option value="30">Murcia</option>
+    <option value="31">Navarra</option>
+    <option value="32">Ourense</option>
+    <option value="34">Palencia</option>
+    <option value="35">Las Palmas</option>
+    <option value="36">Pontevedra</option>
+    <option value="26">La Rioja</option>
+    <option value="37">Salamanca</option>
+    <option value="38">Santa Cruz de Tenerife</option>
+    <option value="40">Segovia</option>
+    <option value="41">Sevilla</option>
+    <option value="42">Soria</option>
+    <option value="43">Tarragona</option>
+    <option value="44">Teruel</option>
+    <option value="45">Toledo</option>
+    <option value="46">Valencia/València</option>
+    <option value="47">Valladolid</option>
+    <option value="48">Vizcaya/Bizkaia</option>
+    <option value="49">Zamora</option>
+    <option value="50">Zaragoza</option>
+  </select>
+
+</br>
+Localidad: <br>
+   <input type="text" name="Localidad" value="" placeholder="Localidad" /> </br>
+
+
+
+</fieldset>
+
+<fieldset>
+
+  <br>
+  <legend><b>Datos de Contacto</b></legend>
+
+  Email: <br>
+   <input type="text" name="Email" value="" placeholder="email" /> </br>
+
+  Teléfono: <br>
+   <input type="text" name="telefono" value="" placeholder="telefono" /> </br>
+
+</fieldset>
+<br>
+
+<fieldset>
+
+<legend><b> Registro Nuevo Usuario </b></legend> <br>
+
+Usuario <br>
+<input type="text" name="usuario" value="" placeholder="Usuario" /> </br>
+Contraseña <br>
+<input type="password" name="contraseña" value="" />
+
+
+
+</fieldset>
+
+
+Intereses: <br>
+<input type="text" name="Intereses" value="" placeholder="Añade aquí los Intereses" /> </br>
+
+<br>
+<b>Adjuntar</b> carta de interés en el Servicio <input type="file" name="carta" /> </br>
+
+
+        <br>
+        <input type="submit" name="Enviar" value="Enviar"> 
+
+        <input type="reset" name="Limpiar" value="Borrar Datos" />
+
+
+        </form> 
+
+    
+</body>
+</html>
